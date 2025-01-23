@@ -4,7 +4,7 @@ This is a project that uses TensorFlow and Keras to classify handwritten texts, 
 
 ## Technologies Used
 - **TensorFlow** and **Keras** for building and training the neural network model.
-- **Python 3.8.10** for the development environment.
+- **Python 3.11.9** for the development environment.
 - **NumPy** for data manipulation.
 - **Matplotlib** for visualizing results.
 
