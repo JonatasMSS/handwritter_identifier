@@ -15,6 +15,7 @@ class Letter_model:
 
     def init_model(self):
         try:
+            print('Starting Model...')
             self.model = models.load_model(self.path, compile=False)
         except Exception as e:
             print('An error ocurred when tried to load the model:', e)
@@ -28,7 +29,9 @@ class Letter_model:
         img = img.convert('L')
         img = np.array(img, dtype=np.float32)
         img = img / 255.00  # Normalize
-        img = img.reshape(-1, 28, 28, 1)
+        # Ensure the image has the correct shape (28, 28, 1)
+        img = np.expand_dims(img, axis=-1)
+        img = np.expand_dims(img, axis=0)  # Add batch dimension (1, 28, 28, 1)
 
         return img
 

@@ -4,8 +4,13 @@ from model_pred import Letter_model
 from utils import save_image
 
 
-md_letter = Letter_model(path='saved_model/letter_model.keras')
-md_letter.init_model()
+@st.cache_resource
+def load_and_start_model(path):
+    md_letter = Letter_model(path=path)
+    md_letter.init_model()  # Carrega o modelo na primeira vez
+    return md_letter
+
+
 if __name__ == "__main__":
     st.set_page_config(
         page_title="Handwritten Letter Prediction", layout="wide")
@@ -56,7 +61,7 @@ if __name__ == "__main__":
             # data.save('temp_img.png')
             save_image(canva.image_data)
 
-            predicition, probabilities = md_letter.predict(
+            predicition, probabilities = load_and_start_model(path='./saved_model/checkpoint_model.h5').predict(
                 img_path='temp_img.png')
 
             html_content = ''.join([
