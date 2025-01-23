@@ -29,7 +29,7 @@ It's recommended to use a virtual environment to manage dependencies. This ensur
 Navigate to the project directory and create a virtual environment with Python 3.8.10:
 
 ```bash
-python3.8 -m venv venv
+python3.11 -m venv venv
 ```
 
 #### Activate the Virtual Environment
