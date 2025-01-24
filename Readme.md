@@ -31,6 +31,11 @@ Navigate to the project directory and create a virtual environment with Python 3
 ```bash
 python3.11 -m venv venv
 ```
+If you don't have it, you can install using winget and after that use:
+
+```bash
+py -3.11 -m venv venv
+```
 
 #### Activate the Virtual Environment
 
