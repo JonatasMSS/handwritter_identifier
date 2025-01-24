@@ -4,9 +4,9 @@ This is a project that uses TensorFlow and Keras to classify handwritten texts, 
 
 ## Technologies Used
 - **TensorFlow** and **Keras** for building and training the neural network model.
-- **Python 3.8.10** for the development environment.
+- **Python 3.11.9** for the development environment.
 - **NumPy** for data manipulation.
-- **Matplotlib** for visualizing results.
+- **Streamlit** for create a frontend interface 
 
 ## Installation Guide
 
@@ -29,7 +29,7 @@ It's recommended to use a virtual environment to manage dependencies. This ensur
 Navigate to the project directory and create a virtual environment with Python 3.8.10:
 
 ```bash
-python3.8 -m venv venv
+python3.11 -m venv venv
 ```
 
 #### Activate the Virtual Environment
