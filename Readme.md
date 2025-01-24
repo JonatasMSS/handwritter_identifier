@@ -17,7 +17,7 @@ Follow these steps to set up the project and run it on your local machine.
 First, clone the repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/yourusername/handwritten-text-digits-classification.git
+git clone https://github.com/JonatasMSS/handwritter_identifier.git
 ```
 
 ### 2. Set Up a Virtual Environment
