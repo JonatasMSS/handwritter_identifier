@@ -2,6 +2,8 @@
 
 This is a project that uses TensorFlow and Keras to classify handwritten texts, identifying whether the input is a number or a letter. The model is trained to recognize both handwritten digits and letters, allowing it to distinguish between them with high accuracy.
 
+Link to Trained Model -> https://github.com/JonatasMSS/handwritten_letter_digit
+
 ## Technologies Used
 - **TensorFlow** and **Keras** for building and training the neural network model.
 - **Python 3.11.9** for the development environment.
