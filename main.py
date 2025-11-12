@@ -44,8 +44,7 @@ if __name__ == "__main__":
 
         canva = st_canvas(
             background_color="rgba(255, 255, 255, 1)", stroke_width=20, width=300, height=300)
-        pred_button = st.button('Predict what is the letter/number is',
-                                use_container_width=True, icon="🤔")
+        pred_button = st.button('Predict what is the letter/number is')
 
     with rg_column:
 
