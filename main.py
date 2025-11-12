@@ -40,7 +40,7 @@ if __name__ == "__main__":
 
     with lf_column:
 
-        st.header(":blue[Canva Draw]", divider='blue')
+        st.header(":blue[Canva Draw]")
 
         canva = st_canvas(
             background_color="rgba(255, 255, 255, 1)", stroke_width=20, width=300, height=300)
@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     with rg_column:
 
-        st.header(':red[Prediction]', divider='red')
+        st.header(':red[Prediction]')
 
         st.subheader('🤖 My prediction is that it is the letter/number:')
 
